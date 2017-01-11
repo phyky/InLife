@@ -1,0 +1,52 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F47D4684040B5D3B13558443B25A74173EC00841+++9A7B0CE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++CE6C85A" : {
+
+    },
+    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++19965B8" : {
+
+    },
+    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++F913E4D" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++F913E4D" : 9223372036854775807,
+    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++CE6C85A" : 9223372036854775807,
+    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++19965B8" : 9223372036854775807,
+    "F47D4684040B5D3B13558443B25A74173EC00841+++9A7B0CE" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "937BDE62-8A9A-46AE-8C23-1DA7D1A47934",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++F913E4D" : "CTBase\/",
+    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++CE6C85A" : "CTNetworking\/",
+    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++19965B8" : "CTNetworking\/",
+    "F47D4684040B5D3B13558443B25A74173EC00841+++9A7B0CE" : "InLife\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "InLife",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "InLife.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/183.62.48.226:7104\/svn\/bx_java",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++19965B8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/183.62.48.226:7104\/svn\/bx_java",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++CE6C85A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/183.62.48.226:7104\/svn\/bx_java",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++F913E4D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/phyky\/InLife.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F47D4684040B5D3B13558443B25A74173EC00841+++9A7B0CE"
+    }
+  ]
+}

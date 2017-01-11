@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ILHomeViewController">
+            <connections>
+                <outlet property="backToTopBtn" destination="OHm-JO-FsO" id="00T-D9-E7H"/>
+                <outlet property="tableView" destination="P7F-vW-fOX" id="vKp-ce-2xH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CK-07-fza">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P7F-vW-fOX">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Z7H-KF-Hlj"/>
+                                <outlet property="delegate" destination="-1" id="7p6-0k-hTa"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHm-JO-FsO">
+                            <rect key="frame" x="272" y="376" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.70588235294117641" green="0.80392156862745101" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="cJ8-UA-i1f"/>
+                                <constraint firstAttribute="width" constant="40" id="nHn-fy-MTG"/>
+                            </constraints>
+                            <state key="normal" image="ic_backToTop.png"/>
+                            <connections>
+                                <action selector="backToTopAction:" destination="-1" eventType="touchUpInside" id="y3a-Wq-DMx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="P7F-vW-fOX" secondAttribute="trailing" id="8D0-Xc-XlH"/>
+                        <constraint firstAttribute="bottom" secondItem="OHm-JO-FsO" secondAttribute="bottom" constant="64" id="Jab-Dg-Izl"/>
+                        <constraint firstItem="P7F-vW-fOX" firstAttribute="leading" secondItem="1CK-07-fza" secondAttribute="leading" id="MrE-ci-TzX"/>
+                        <constraint firstAttribute="trailing" secondItem="OHm-JO-FsO" secondAttribute="trailing" constant="8" id="Pnl-ud-DXC"/>
+                        <constraint firstItem="P7F-vW-fOX" firstAttribute="top" secondItem="1CK-07-fza" secondAttribute="top" id="ZJm-Bz-Kbb"/>
+                        <constraint firstAttribute="bottom" secondItem="P7F-vW-fOX" secondAttribute="bottom" id="jGO-OF-0P6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1CK-07-fza" secondAttribute="bottom" id="Bm4-4g-WKa"/>
+                <constraint firstAttribute="trailing" secondItem="1CK-07-fza" secondAttribute="trailing" id="VeH-cu-pN2"/>
+                <constraint firstItem="1CK-07-fza" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bkX-hI-xrT"/>
+                <constraint firstItem="1CK-07-fza" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sI9-RW-Ebu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_backToTop.png" width="120" height="120"/>
+    </resources>
+</document>

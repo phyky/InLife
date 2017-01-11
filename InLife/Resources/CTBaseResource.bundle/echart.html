@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>图表</title>
+<style type="text/css">
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+</style>
+</head>
+<body>
+	<div id="chart" style="width: 100%; height: 100%;"></div>
+
+
+	<script type="text/javascript">
+        // 图表对象
+        var myChart;
+        // 通信桥对象
+        var myBridge;
+        
+        // 通信桥连接
+        function connectWebViewJavascriptBridge(callback) {
+            if (window.WebViewJavascriptBridge) {
+                callback(WebViewJavascriptBridge)
+            } else {
+                document.addEventListener('WebViewJavascriptBridgeReady', function() {
+                                          callback(WebViewJavascriptBridge)
+                                          }, false)
+            }
+        }
+	
+        connectWebViewJavascriptBridge(function(bridge) {
+            myBridge = bridge;
+            
+            bridge.init(function(message, responseCallback) {});
+        });
+        
+        // 初始化图表对象，该方法由WebView调用
+        function initChart(){
+            myChart = echarts.init(document.getElementById('chart'));
+            
+            // 统一事件处理器
+            var eventHandler = function(param){
+                delete param.event;//部分事件的event对象无法传递到WebView
+                // 传递事件处理到WebView
+                myBridge && myBridge.callHandler('eventHandler', param);
+            };
+            
+            var EVENT = echarts.config.EVENT;
+            myChart.on(EVENT.REFRESH, eventHandler);
+            myChart.on(EVENT.RESTORE, eventHandler);
+            myChart.on(EVENT.RESIZE, eventHandler);
+            myChart.on(EVENT.CLICK, eventHandler);
+            myChart.on(EVENT.DBLCLICK, eventHandler);
+            myChart.on(EVENT.HOVER, eventHandler);
+            myChart.on(EVENT.MOUSEOUT, eventHandler);
+            myChart.on(EVENT.DATA_CHANGED, eventHandler);
+            myChart.on(EVENT.DATA_VIEW_CHANGED, eventHandler);
+            myChart.on(EVENT.MAGIC_TYPE_CHANGED, eventHandler);
+            myChart.on(EVENT.TIMELINE_CHANGED, eventHandler);
+            myChart.on(EVENT.DATA_ZOOM, eventHandler);
+            myChart.on(EVENT.DATA_RANGE, eventHandler);
+            myChart.on(EVENT.DATA_RANGE_SELECTED, eventHandler);
+            myChart.on(EVENT.DATA_RANGE_HOVERLINK, eventHandler);
+            myChart.on(EVENT.LEGEND_SELECTED, eventHandler);
+            myChart.on(EVENT.LEGEND_HOVERLINK, eventHandler);
+            myChart.on(EVENT.MAP_ROAM, eventHandler);
+            myChart.on(EVENT.MAP_SELECTED, eventHandler);
+            myChart.on(EVENT.PIE_SELECTED, eventHandler);
+            myChart.on(EVENT.FORCE_LAYOUT_END, eventHandler);
+        }
+
+	</script>
+</body>
+</html>
