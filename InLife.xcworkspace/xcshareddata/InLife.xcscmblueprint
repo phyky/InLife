@@ -1,5 +1,5 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F47D4684040B5D3B13558443B25A74173EC00841+++9A7B0CE",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DD11FFB1D5E5AA29AA1BEFF896A5DF8594D421EE+++9A7B0CE",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++CE6C85A" : {
 
@@ -13,16 +13,16 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++F913E4D" : 9223372036854775807,
+    "DD11FFB1D5E5AA29AA1BEFF896A5DF8594D421EE+++9A7B0CE" : 9223372036854775807,
     "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++CE6C85A" : 9223372036854775807,
-    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++19965B8" : 9223372036854775807,
-    "F47D4684040B5D3B13558443B25A74173EC00841+++9A7B0CE" : 9223372036854775807
+    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++19965B8" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "937BDE62-8A9A-46AE-8C23-1DA7D1A47934",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++F913E4D" : "CTBase\/",
+    "DD11FFB1D5E5AA29AA1BEFF896A5DF8594D421EE+++9A7B0CE" : "InLife\/",
     "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++CE6C85A" : "CTNetworking\/",
-    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++19965B8" : "CTNetworking\/",
-    "F47D4684040B5D3B13558443B25A74173EC00841+++9A7B0CE" : "InLife\/"
+    "11683ffa-d2a7-3d43-94d0-a4b87007de26++6508+++19965B8" : "CTNetworking\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "InLife",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -46,7 +46,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/phyky\/InLife.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F47D4684040B5D3B13558443B25A74173EC00841+++9A7B0CE"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DD11FFB1D5E5AA29AA1BEFF896A5DF8594D421EE+++9A7B0CE"
     }
   ]
 }
